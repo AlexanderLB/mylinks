@@ -37,7 +37,7 @@ body{
     gap: 50px;
 }
 
-.left{
+a{
     font-family: 'Bebas Neue', cursive;
     text-decoration: none;
     color: white;
@@ -47,41 +47,36 @@ body{
     border-right-width: 100px;
     border-radius: 10in;
     filter: drop-shadow(0px 0px 10px white);
-    animation: 2s links-left;
-    animation-iteration-count: 1;
+}
+
+.left{
+    animation-name: slide-left;
+    animation-duration: 2s;
 }
 
 .right{
-    font-family: 'Bebas Neue', cursive;
-    text-decoration: none;
-    color: white;
-    border: 10px solid black;
-    background-color: black;
-    border-left-width: 100px;
-    border-right-width: 100px;
-    border-radius: 10in;
-    filter: drop-shadow(0px 0px 10px white);
-    animation: 2s links-right;
+    animation: 1.5s slide-right;
     animation-iteration-count: 1;
 }
 
-@keyframes links-left{
-    0%{
-        transform: translateX(-100%);
+@keyframes slide-left{
+    from{
+        margin-right: 100%;
         opacity: 0;
     }
-    100%{
-        transform: translateX(0%);
+    to{
+        margin-right: 0%;
         opacity: 1;
     }
 }
-@keyframes links-right{
-    0%{
-        transform: translateX(-100%);
+
+@keyframes slide-right{
+    from{
+        margin-left: 100%;
         opacity: 0;
     }
-    100%{
-        transform: translateX(0%);
+    to{
+        margin-left: 0%;
         opacity: 1;
     }
 }
