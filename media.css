@@ -3,9 +3,9 @@
     #slide_title{
         padding-top: auto;
         font-size: 10px;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
     }
-    #contenedor{
-        gap: 20px;
+    #a{
+        margin-top: 50px;
     }
 }
