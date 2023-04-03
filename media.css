@@ -1,0 +1,11 @@
+/*responsive*/
+@media (min-width:300px) {
+    #slide_title{
+        padding-top: auto;
+        font-size: 10px;
+        margin-bottom: 10%;
+    }
+    #contenedor{
+        gap: 20px;
+    }
+}
